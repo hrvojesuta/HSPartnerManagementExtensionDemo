@@ -8,6 +8,8 @@ A lightweight AL extension for Microsoft Dynamics 365 Business Central, created 
 This project is intentionally simple and easy to read — ideal for recruiters, other developers, or anyone reviewing code quality.
 
 ✨ Features
+
+
 🧩 Partner Master Data
 
 Custom Partner table
