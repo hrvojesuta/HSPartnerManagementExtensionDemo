@@ -1,0 +1,34 @@
+{
+  "id": "50f4fa55-3f10-4320-9b3b-d0598a8de53c",
+  "name": "HS Supplier",
+  "publisher": "HS",
+  "version": "1.0.0.0",
+  "brief": "HS Supplier DEMO Repo App",
+  "description": "HS Supplier DEMO Repo App",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "27.0.0.0",
+  "logo": "logo/HSLogo.png",
+  "privacyStatement": "https://github.com/hrvojesuta",  
+  "help": "https://github.com/hrvojesuta",
+  "contextSensitiveHelpUrl": "https://github.com/hrvojesuta",
+  "url": "https://github.com/hrvojesuta",
+  "idRanges": [
+    {
+      "from": 70100,
+      "to": 70200
+    }
+  ],  
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
+  },
+  "runtime": "16.0",
+  "features": [
+    "NoImplicitWith",
+    "TranslationFile"
+  ],
+  "target": "Cloud"
+}

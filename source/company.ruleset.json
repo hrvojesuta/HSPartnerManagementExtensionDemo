@@ -1,0 +1,22 @@
+{
+ 
+    "name": "Personal Project ruleset",
+    "description": "A list of project specific rules",
+    "rules": [
+        {
+            "action": "Hidden", 
+            "id": "AS0084",
+            "justification": "targeting free on extension range.id ranges: 50000-99999."
+        },
+        {
+            "action": "Hidden",
+            "id": "AS0092",
+            "justification": "Application insights disabled for this project. This is only a demo project."
+        },
+        {
+            "action": "Hidden",
+            "id": "AS0051",
+            "justification": "DEMO Project I am not using EULA pdf document."
+        }
+    ]   
+}
