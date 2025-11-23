@@ -1,0 +1,26 @@
+{
+	"folders": [
+		{
+			"path": "test"
+		},
+		{
+			"path": "source"
+		}
+	],
+	"settings": {
+		"al.codeAnalyzers": ["${CodeCop}","${UICop}","${AppSourceCop}"],
+    	"al.enableCodeAnalysis": true,
+		"al.packageCachePath": "./.packages",
+		"al.ruleSetPath": "./company.ruleset.json",
+		"alOutline.completionProviders": [
+			"VariableNamesWithType"
+		],
+		"CRS.FileNamePattern": "<ObjectNameShort>.<ObjectTypeShortPascalCase>.al",
+		"CRS.FileNamePatternExtensions": "<ObjectNameShort>.<ObjectTypeShortPascalCase>.al",
+		"CRS.FileNamePatternPageCustomizations": "<ObjectNameShort>.<ObjectTypeShortPascalCase>.al",
+		"CRS.OnSaveAlFileAction": "Rename",
+		"CRS.RenameWithGit": false,
+		"CRS.ObjectNamePrefix": "HS",
+		"powershell.cwd": "source",
+	}
+}
