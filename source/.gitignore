@@ -9,3 +9,7 @@ rad.json
 *.g.xlf
 *.flf
 TestResults.xml
+test/_altestrunner/
+test/node_modules/
+test/package.json
+test/package-lock.json
