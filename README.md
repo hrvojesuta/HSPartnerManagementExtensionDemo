@@ -61,18 +61,35 @@ In Business Central:
 Tell Me → Partner List
 
 📁 Project Structure
+
+
 test/
+
+
 source/
+
+
   Objects/
+
+  
     Codeunits/
+    
     Enums/
+    
     PageExtensions/
+    
     Pages/
+    
     Reports/
+    
     TableExtensions/
+    
     Tables/
+    
   rdlc/
+  
   Translations/
+  
   app.json
 
 
@@ -98,6 +115,7 @@ Clean project structure & naming conventions
 
 
 Future improvements
+
 Tests for this project
 
 🎯 Purpose of This Project
