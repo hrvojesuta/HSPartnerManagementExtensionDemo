@@ -116,7 +116,14 @@ Clean project structure & naming conventions
 
 Future improvements
 
-Tests for this project
+Tests for this project (done) 
+First added tests that were resulting in failure. 
+<img width="933" height="594" alt="image" src="https://github.com/user-attachments/assets/7442d283-64e4-4111-90ac-ce15ac0cc40b" />
+
+Then fixed every test to pass. :)
+
+<img width="1347" height="741" alt="image" src="https://github.com/user-attachments/assets/2d9332f4-3dcb-43b7-86d5-3c4fd1370b59" />
+
 
 🎯 Purpose of This Project
 
