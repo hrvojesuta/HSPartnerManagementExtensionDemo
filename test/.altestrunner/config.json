@@ -1,0 +1,16 @@
+{
+    "containerResultPath":  "C:\\ProgramData\\BcContainerHelper",
+    "securePassword":  "01000000d08c9ddf0115d1118c7a00c04fc297eb01000000d8c0de6ef1eea042928108da5ae2619200000000020000000000106600000001000020000000c46a96cde177fab7200212969996cb20f62c6763274254735560eadbb292e448000000000e80000000020000200000004669d9abffccd3d8a9d22f26759bf8186541fcee7c9b5054a8e041d43c46590c20000000293eb0b1e6720244bc026d42f86b34ea5bb5bbfa331ea4aa94e7ebcf113d118540000000ed3476585d4ea14a35e3f127b0e679db945efecbf2b9b879b1d1900fe2992d0d9e0cdc6a62d16e07bf1f79a2e13a1c29d2618f79ce4a3c852eae9c4dd54b30d0",
+    "userName":  "HSUTA",
+    "companyName":  "CRONUS USA, Inc.",
+    "testSuiteName":  "",
+    "vmUserName":  "",
+    "vmSecurePassword":  "",
+    "remoteContainerName":  "",
+    "dockerHost":  "",
+    "newPSSessionOptions":  "",
+    "testRunnerServiceUrl":  "http://bc27:7047/BC/WS/CRONUS USA, Inc./Codeunit/TestRunner?tenant=default",
+    "codeCoveragePath":  ".//.altestrunner//codecoverage.json",
+    "culture":  "en-US",
+    "launchConfigName":  "Your own server"
+}

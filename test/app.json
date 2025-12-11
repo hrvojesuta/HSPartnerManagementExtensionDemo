@@ -1,0 +1,60 @@
+{
+  "id": "3ef7e6ff-616a-413c-add8-3cadc2c7b71c",
+  "name": "HS Supplier TEST",
+  "publisher": "HS TEST",
+  "version": "1.0.0.0",
+  "brief": "HS Supplier DEMO Repo App TEST",
+  "description": "HS Supplier DEMO Repo App",
+  "dependencies": [
+    {
+        "id":  "23de40a6-dfe8-4f80-80db-d70f83ce8caf",
+        "publisher":  "Microsoft",
+        "name":  "Test Runner",
+        "version":  "27.1.40752.0"
+    },
+    {
+        "id":  "dd0be2ea-f733-4d65-bb34-a28f4624fb14",
+        "publisher":  "Microsoft",
+        "name":  "Library Assert",
+        "version":  "27.0.0.0"
+    },
+    {
+        "id":  "5095f467-0a01-4b99-99d1-9ff1237d286f",
+        "publisher":  "Microsoft",
+        "name":  "Library Variable Storage",
+        "version":  "27.0.0.0"
+    },
+    {
+        "id":  "50f4fa55-3f10-4320-9b3b-d0598a8de53c",
+        "publisher":  "HS",
+        "name":  "HS Supplier",
+        "version":  "1.0.0.0"
+    }
+
+  ],  
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "27.0.0.0",
+  "logo": "logo/HSLogo.png",
+  "privacyStatement": "https://github.com/hrvojesuta",  
+  "help": "https://github.com/hrvojesuta",
+  "contextSensitiveHelpUrl": "https://github.com/hrvojesuta",
+  "url": "https://github.com/hrvojesuta",
+  "idRanges": [
+    {
+      "from": 70201,
+      "to": 70300
+    }
+  ],  
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
+  },  
+  "runtime": "16.0",
+  "features": [
+    "NoImplicitWith",
+    "TranslationFile"
+  ],
+  "target": "Cloud"
+}

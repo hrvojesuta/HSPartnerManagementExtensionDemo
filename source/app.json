@@ -5,7 +5,9 @@
   "version": "1.0.0.0",
   "brief": "HS Supplier DEMO Repo App",
   "description": "HS Supplier DEMO Repo App",
-  "dependencies": [],
+  "dependencies": [    
+
+  ],  
   "screenshots": [],
   "platform": "1.0.0.0",
   "application": "27.0.0.0",
@@ -24,7 +26,7 @@
     "allowDebugging": true,
     "allowDownloadingSource": true,
     "includeSourceInSymbolFile": true
-  },
+  },  
   "runtime": "16.0",
   "features": [
     "NoImplicitWith",
