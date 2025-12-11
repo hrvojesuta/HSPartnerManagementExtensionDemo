@@ -1,6 +1,10 @@
+namespace HS.Tests;
+
+using HS;
+using System.TestLibraries.Utilities;
 codeunit 70201 "HS Partner Management Tests"
 {
-    Subtype = Test;
+    SubType = Test;
 
     var
         Partner: Record "HS Supplier";
@@ -20,6 +24,7 @@ codeunit 70201 "HS Partner Management Tests"
     end;
 
     [Test]
+    [HandlerFunctions('TestConfirmHandler')]
     procedure TestGenerateEmail()
     var
         Email: Text;
@@ -27,6 +32,12 @@ codeunit 70201 "HS Partner Management Tests"
         Email := PartnerMgt.GenerateSupplierEMail('John Doe', 'BlueCorp');
 
         Assert.AreEqual('john.doe@bluecorp.com', Email, 'Email generation failed.');
+    end;
+
+    [ConfirmHandler]
+    procedure TestConfirmHandler(Question: Text[1024]; var Reply: Boolean)
+    begin
+        Reply := true;
     end;
 
     [Test]
@@ -51,7 +62,7 @@ codeunit 70201 "HS Partner Management Tests"
         Partner.Init();
         Partner.Code := 'SUP001';
         Partner.Name := 'Test Partner';
-        Partner.CompanyName := 'TestCo';
+        Partner."Company Name" := 'TestCo';
         Partner.Insert();
 
         PartnerMgt.CreateNewSupplier(Partner);
@@ -61,4 +72,8 @@ codeunit 70201 "HS Partner Management Tests"
         Assert.AreEqual('', NewPartner."E-Mail", 'Email should be cleared.');
         Assert.AreEqual('', NewPartner."Contact No.", 'Contact No. should be cleared.');
     end;
+
+
+    var
+        Assert: Codeunit "Library Assert";
 }

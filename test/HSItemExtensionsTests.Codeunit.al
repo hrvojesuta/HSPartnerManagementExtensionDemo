@@ -1,6 +1,11 @@
+namespace HS.Tests;
+
+using HS;
+using System.TestLibraries.Utilities;
+using Microsoft.Inventory.Item;
 codeunit 70202 "HS Item Extensions Tests"
 {
-      Subtype = Test;
+    SubType = Test;
 
     var
         Partner: Record "HS Supplier";
@@ -9,19 +14,16 @@ codeunit 70202 "HS Item Extensions Tests"
     [Test]
     procedure TestAssignPartnerToItem()
     begin
-        // Create partner
         Partner.Init();
         Partner.Code := 'SUPTEST';
         Partner.Name := 'Test Partner';
         Partner.Insert();
 
-        // Create item
         Item.Init();
         Item."No." := '1000';
         Item.Description := 'Test Item';
         Item.Insert();
 
-        // Assign partner
         Item."HS Supplier Code" := 'SUPTEST';
         Item.Modify();
 
@@ -42,11 +44,15 @@ codeunit 70202 "HS Item Extensions Tests"
         Item.Description := 'Test Item 2';
         Item.Insert();
 
-        asserterror begin
-            Item."HS Supplier Code" := 'BLK01';
+        asserterror
+        begin
+            Item.Validate("HS Supplier Code", 'BLK01');
             Item.Modify(true);
         end;
 
-        Assert.ExpectedError('Supplier is Blocked.');
+        Assert.ExpectedError('Supplier Blocked Partner is blocked');
     end;
+
+    var
+        Assert: Codeunit "Library Assert";
 }

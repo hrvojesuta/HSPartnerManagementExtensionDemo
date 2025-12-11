@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<assemblies>
+  <assembly name="AL Test Runner Error" total="0" passed="0" failed="1" skipped="0" time="0" errors="1" run-date="2025-12-11" run-time="00:22:54">
+    <collection>
+      <test name="PowerShell Execution Error" type="Error" method="ExecutionError" time="0" result="Fail">
+        <failure exception-type="PowerShellExecutionError">
+          <message><![CDATA[Access to the path is denied.]]></message>
+          <stack-trace><![CDATA[at Copy-FileFromBcContainer, C:\Program Files\WindowsPowerShell\Modules\bccontainerhelper\6.1.9\Misc\Copy-FileFromNavContainer.ps1: line 42
+at Invoke-RunTests, C:\Users\HrvojeSuta\.vscode-insiders\extensions\jamespearson.al-test-runner-10.16.0\PowerShell\Invoke-RunTests.ps1: line 140
+at Invoke-ALTestRunner, C:\Users\HrvojeSuta\.vscode-insiders\extensions\jamespearson.al-test-runner-10.16.0\PowerShell\Invoke-ALTestRunner.ps1: line 122
+at &lt;ScriptBlock&gt;, &lt;No file&gt;: line 1]]></stack-trace>
+        </failure>
+      </test>
+    </collection>
+  </assembly>
+</assemblies>

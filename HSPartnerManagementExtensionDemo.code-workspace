@@ -21,6 +21,6 @@
 		"CRS.OnSaveAlFileAction": "Rename",
 		"CRS.RenameWithGit": false,
 		"CRS.ObjectNamePrefix": "HS",
-		"powershell.cwd": "source",
+		"powershell.cwd": "source"
 	}
 }

@@ -46,8 +46,9 @@ codeunit 70100 "HS Supplier Mgt."
     begin
         if (Name = '') or (CompanyName = '') then
             exit('');
-        if not Confirm(ConfirmTxt, false) then
-            exit('');
+        if GuiAllowed() then
+            if not Confirm(ConfirmTxt, false) then
+                exit('');
 
 
         Name := CopyStr(Name.Trim(), 1, MaxStrLen(Name));
@@ -83,12 +84,11 @@ codeunit 70100 "HS Supplier Mgt."
 
     [EventSubscriber(ObjectType::Table, Database::"Sales Line", 'OnAfterCopyFromItem', '', false, false)]
     local procedure OnAfterCopyFromItemSupplierCode(var SalesLine: Record "Sales Line"; Item: Record Item; CurrentFieldNo: Integer; xSalesLine: Record "Sales Line")
-    var
-        Supplier: Record "HS Supplier";
     begin
-        if Supplier.Get(item."HS Supplier Code") then
-            if Supplier.Code <> '' then
-                SalesLine."HS Supplier Code" := Supplier."Code";
+        if Item."HS Supplier Code" <> '' then begin
+            SalesLine."HS Supplier Code" := Item."HS Supplier Code";
+            SalesLine.Modify(true);
+        end;
     end;
 
 
@@ -137,6 +137,12 @@ codeunit 70100 "HS Supplier Mgt."
 
         Message('Sales Line total quantity is: %1',
             Format(SalesLine."Quantity", 0, '<Precision,2:2><Standard Format,0>'));
+    end;
+
+    procedure CheckItemSupplierBlocked(Supplier: Record "HS Supplier")
+    begin
+        if Supplier.Blocked then
+            Error('Supplier is Blocked.');
     end;
 
 }
