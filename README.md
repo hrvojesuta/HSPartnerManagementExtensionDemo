@@ -55,6 +55,7 @@ Open it in Visual Studio Code
 Configure launch.json with your sandbox details
 
 Press Ctrl + F5 to publish the extension
+(tested on version 27.1.40752.0)
 
 In Business Central:
 
