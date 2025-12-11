@@ -1,3 +1,14 @@
+namespace HS.Tests;
+
+using HS;
+using Microsoft.Inventory.Item;
+using Microsoft.Sales.Document;
+using System.TestLibraries.Utilities;
+using Microsoft.Sales.Customer;
+using Microsoft.Finance.GeneralLedger.Setup;
+using Microsoft.Finance.VAT.Setup;
+using Microsoft.Foundation.UOM;
+
 codeunit 70203 "HS Sales Line Integration Test"
 {
     SubType = Test;
